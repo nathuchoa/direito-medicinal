@@ -61,13 +61,20 @@ h5{
 .bg-form{
     padding: 30px !important;
     border-radius: 20px;
-    background-color: rgba(176, 176, 176, 0.482);
+    background-color: rgba(176, 176, 176, 0.788);
 }
 .card-text{
     font-size: 0.8rem;
 }
 
 .titulo-secao, .navbar-nav{
-    visibility: hidden;
+    visibility: visible;
 }
 
+.clearfix img{
+ padding: 20px;
+}
+
+.clearfix {
+    align-items: center;
+}

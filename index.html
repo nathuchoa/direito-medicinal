@@ -16,35 +16,34 @@
 
 <body>
     <header class="header-container background-capa">
-        <nav class="navbar bg-menu navbar-expand-lg px-4 justify-content-around" data-bs-theme="dark">
+        <nav class="navbar bg-menu navbar-expand-lg px-4 justify-content-around text-center" data-bs-theme="dark">
             <div class="logo">
                 <a class="navbar-brand" href="/index">
                     <img src="./assets/logo-horizontal.png" height="120vh" width="auto" />
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                         fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                     </svg></span>
             </button>
-            <div class="navbarstyle justify-content-end collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="navbarstyle collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item p-2">
                         <a class="nav-link projects-btn detalhe-hover" aria-current="page"
                             href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link projects-btn" aria-current="page"
+                        <a class="nav-link" aria-current="page"
                             href="#especialidades">Especialidades</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link projects-btn" aria-current="page" href="#contato">Contato</a>
+                        <a class="nav-link" aria-current="page" href="#contato">Contato</a>
                     </li>
                 </ul>
-                <div class="d-flex col-1 gap-2 mx-5">
+                <div class="d-flex col-1 gap-2">
                     <a class="icon-header" href="https://www.linkedin.com/in/lucas-miranda-sobral/">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                             class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -140,11 +139,11 @@
     </section>
 
     <section id="sobre">
-        <div class="clearfix p-4 bg-dark-subtle">
-            <img src="./assets/foto-perfil1.png" height="300vh" class="col-md-3 float-md-start mb-3 ms-md-3"
+        <div class="clearfix p-5 bg-dark-subtle justify-content-center">
+            <img src="./assets/foto-perfil1.png" height="300vh" class="col-md-3 float-md-start mb-3 ms-md-3 mx-auto"
                 alt="Foto Lucas Sobral">
             <h2 class="text-center pb-3 titulo-secao">Sobre o especialista</h2>
-            <div class="">
+            <div>
                 <p>
                     Lucas Sobral é advogado, possui especialização Latu Sensu em Direito Médico e Hospitalar e cursa pós
                     graduação de Gestão de Pessoas, Carreira, Liderança e Coaching (PUCRS). Em sua
@@ -255,58 +254,51 @@
         <h2 class="text-center p-5 titulo-secao">Entre em contato</h2>
         <div id="info" class="row row-cols-1 row-cols-md-3 g-3 p-3 justify-content-around">
             <div class="col-lg-5 bg-form">
-                <form>
+                <form name="contato">
                     <h5 class="text-center mb-5">Deixe sua mensagem</h5>
                     <!-- 2 column grid layout with text inputs for the first and last names -->
                     <div class="row mb-4">
                       <div class="col">
                         <div class="form-outline">
-                          <input type="text" id="nome" class="form-control" placeholder="Nome" required/>
+                          <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome" required/>
                           
                         </div>
                       </div>
                       <div class="col">
                         <div class="form-outline">
-                          <input type="text" id="sobrenome" class="form-control" placeholder="sobrenome" required />
+                          <input type="text" id="sobrenome" name="sobrenome" class="form-control" placeholder="sobrenome" required />
                         </div>
                       </div>
                     </div>
                   
                     <!-- Text input -->
-                    <!-- <div class="form-outline mb-4">
-                      <input type="text" id="form6Example3" class="form-control" />
-                      <label class="form-label" for="form6Example3">Company name</label>
-                    </div> -->
-                  
-                    <!-- Text input -->
                     <div class="form-outline mb-4">
-                      <input type="text" id="endereço" class="form-control" placeholder="Endereço: Rua n.º, bairro, Cidade - UF. CEP" />
-                      
+                      <input type="text" id="endereco" name="endereco" class="form-control" placeholder="Endereço: Rua n.º, bairro, cidade - UF. CEP." />
                     </div>
                   
                     <!-- Email input -->
                     <div class="form-outline mb-4">
-                      <input type="email" id="e-mail" class="form-control" placeholder="E-mail : exemplo@email.com" required />
+                      <input type="email" id="email" name="email" class="form-control" placeholder="E-mail : exemplo@email.com" required />
                     </div>
                   
                     <!-- Number input -->
                     <div class="form-outline mb-4">
-                      <input type="number" id="telefone" class="form-control" placeholder="(DDD)99999-9999" required/>
+                      <input type="number" id="telefone" name="telefone" class="form-control" placeholder="Telefone: (DDD) 99999-9999" required/>
                     </div>
                   
                     <!-- Message input -->
                     <div class="form-outline mb-4">
-                      <textarea class="form-control" id="mensagem" rows="4" placeholder="Como posso te ajudar? (Escreva em poucas palavras)" required></textarea>
+                      <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Como posso te ajudar? (Escreva em poucas palavras)" required></textarea>
                     </div>
                   
                     <!-- Checkbox -->
                     <div class="form-check col justify-content-center mb-4">
-                      <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
-                      <label class="form-check-label" for="form6Example8"> Estou ciente que os meus dados não serão compartilhados com terceiros sem autorização. </label>
+                      <input class="form-check-input me-2" type="checkbox" value="" id="checkbox" checked />
+                      <label class="form-check-label" for="checkbox"> Estou ciente que os meus dados não serão compartilhados com terceiros sem autorização. </label>
                     </div>
                   
                     <!-- Submit button -->
-                    <button type="submit" class="btn btn-primary btn-block mb-4">Place order</button>
+                    <button type="submit" class="btn btn-secondary btn-block mb-4">Enviar</button>
                   </form>
             </div>
             <div class="col-lg-4 col-sm-1">
@@ -339,7 +331,7 @@
 
     <footer class="bg-dark text-center text-lg-start text-white">
 
-        <div class="container p-4">
+        <div class="container p-3">
 
             <div class="row my-4">
 
@@ -395,8 +387,7 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <p><i class="fas fa-map-marker-alt pe-2"></i>Nome da rua 00, sala 000. Edifício. Maceió -
-                                AL. CEP 00000-000.</p>
+                            <p><i class="fas fa-map-marker-alt pe-2"></i>Av. Desembargador Valente de Lima 338, Mangabeiras - Maceió (AL)</p>
                         </li>
                         <li>
                             <p><i class="fas fa-phone pe-2"></i>+55 (82) 98175-0420</p>
@@ -409,13 +400,26 @@
             </div>
 
         </div>
-        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2); font-size: 0.8rem;">
-            © 2020 Copyright:
-            <a class="text-white" href="https://digitalrefresh.pt/"> Digital Refresh - Todos os direitos reservados.</a>
+        <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2); font-size: 0.8rem;">
+            <p>
+            © 2023 Criado por
+            <a class="text-white" href="https://digitalrefresh.pt/"> Digital Refresh</a> - Todos os direitos reservados.</p>
         </div>
 
     </footer>
 
+    <script>
+        const scriptURL = '<SCRIPT URL>'
+        const form = document.forms['contato']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
 
     <script src="./animacao.js"></script>
 
