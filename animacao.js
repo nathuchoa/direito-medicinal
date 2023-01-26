@@ -11,3 +11,8 @@ sr.reveal('.card',{
     delay: 100,
     distance: '20px'
 });
+
+sr.reveal('.btn-group', {
+    scale: 0.85,
+    duration:600
+})

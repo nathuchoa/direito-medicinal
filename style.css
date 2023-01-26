@@ -45,12 +45,13 @@ h5{
 
 .background-capa{
     background-image:
-    linear-gradient(to bottom, rgba(40, 40, 40, 0.751), rgba(35, 35, 35, 0.902)),
-    url('assets/bg-main.png');
-    width: 100%;
+    linear-gradient(to bottom, rgba(19, 19, 19, 0.751), rgba(35, 35, 35, 0.902)),
+    url('./assets/image0.jpeg');
+    width: auto;
     height: 90vh;
+    box-sizing: border-box;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     color: white;
 }
 
@@ -75,7 +76,7 @@ h5{
     font-size: 0.8rem;
 }
 
-.titulo-secao {
+.titulo-secao, .btn-group {
     visibility: hidden;
 }
 
@@ -105,4 +106,13 @@ a{
 
 input{
     border-radius: 20px;
+}
+
+.card-galeria img{
+    border: 0 !important;
+}
+
+.galeria .col{
+    padding: 0 !important;
+    gap: 0 !important;
 }
