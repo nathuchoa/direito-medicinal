@@ -92,6 +92,10 @@ a{
     border-radius: 0px 30px 30px 0px !important;
 }
 
-.btn-d-e , input{
+.btn-d-e {
     border-radius: 30px !important;
+}
+
+input{
+    border-radius: 20px;
 }
