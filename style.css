@@ -26,6 +26,13 @@ h5{
 
 .icon-header{
     color: #fff;
+    padding-top: 20px;
+}
+
+.icons-navbar{
+    margin: auto;
+    padding: auto;
+    justify-content: center;
 }
 
 #especialidades{
@@ -68,8 +75,8 @@ h5{
     font-size: 0.8rem;
 }
 
-.titulo-secao, .navbar-nav{
-    visibility: visible;
+.titulo-secao {
+    visibility: hidden;
 }
 
 .clearfix img{
