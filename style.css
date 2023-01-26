@@ -17,7 +17,7 @@ h5{
     line-height: 1.15;
 }
 
-.nav-item a:hover{
+.nav-item a:hover, .list-unstyled a:hover{
     color: rgb(255, 177, 9) !important;
     font-weight: 600;
     border-block-end: 2px solid;
@@ -38,7 +38,7 @@ h5{
 
 .background-capa{
     background-image:
-    linear-gradient(to bottom, rgba(40, 40, 40, 0.751), rgba(16, 16, 16, 0.902)),
+    linear-gradient(to bottom, rgba(40, 40, 40, 0.751), rgba(35, 35, 35, 0.902)),
     url('assets/bg-main.png');
     width: 100%;
     height: 90vh;
@@ -63,6 +63,7 @@ h5{
     border-radius: 20px;
     background-color: rgba(176, 176, 176, 0.788);
 }
+
 .card-text{
     font-size: 0.8rem;
 }
@@ -77,4 +78,20 @@ h5{
 
 .clearfix {
     align-items: center;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.btn-e {
+    border-radius: 30px 0px 0px 30px !important;
+}
+
+.btn-d {
+    border-radius: 0px 30px 30px 0px !important;
+}
+
+.btn-d-e , input{
+    border-radius: 30px !important;
 }
