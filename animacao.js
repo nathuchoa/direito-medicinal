@@ -7,8 +7,8 @@ sr.reveal('.titulo-secao', {
 
 sr.reveal('.card',{
     origin: 'bottom',
-    duration: 1200,
-    delay: 100,
+    duration: 800,
+    delay: 80,
     distance: '20px'
 });
 
