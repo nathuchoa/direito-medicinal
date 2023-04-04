@@ -69,7 +69,7 @@ h5{
     background-color: rgba(30, 30, 30, 0.769);
 } */
 
-.background-capa{
+/* .background-capa{
     background-image:
     linear-gradient(to bottom, rgba(19, 19, 19, 0.751), rgba(35, 35, 35, 0.902)),
     url('./assets/image0.jpeg');
@@ -79,6 +79,37 @@ h5{
     background-size: cover;
     background-position: top;
     color: white;
+} */
+
+header{
+    background-color: black !important;
+}
+
+.background-capa{
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: visible;
+    animation: slideBg 8s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('./assets/image0.jpeg');
+}
+
+@keyframes slideBg {
+    0% {
+        background-image: url('./assets/image0.jpeg');
+    }
+    33% {
+        background-image: ('./assets/');
+    }
+    69% {
+        background-image: url('./assets/image4.jpeg');
+    }
+    100% {
+        background-image: url('./assets/image6.jpeg');
+    }
 }
 
 .nav-item {
